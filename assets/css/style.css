@@ -9,3 +9,90 @@ html {
 body{
     font-size: 1.6rem;
 }
+/*================== common ====================== */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    padding: 0px 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    /* letter-spacing: 0%; */
+    text-align: center;
+    color: #FFFFFF;
+    background: #171100;
+    /* width: 144;
+    height: 50;
+    top: 36px;
+    left: 1161px;
+    opacity: 1; */
+    border-radius: 24.5px;
+
+}
+/*================== header ====================== */
+.header{
+    background: #ccc7b8;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0px 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+.nav ul{
+    display: flex;
+}
+
+.nav a{
+   color: black;
+   position: relative;
+   font-size: 1.6rem;
+   padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover{
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after{
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    /* top: 73px;
+    left: 733px;
+    opacity: 1; */
+    border-radius: 1px;
+    background: #171100;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+}
+
+.header .btn-sign-up{
+   min-width: 144px;
+}
+
+.header .action{
+    margin-left: 49px;
+}
